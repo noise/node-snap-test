@@ -1,0 +1,11 @@
+{
+    "name": "noise-ntest1",
+    "version": "1.0.0",
+    "description": "Test nodejs app",
+    "license": "MIT",
+    "private": true,
+    "bin": "./main.js",
+    "dependencies": {
+	
+    }
+}

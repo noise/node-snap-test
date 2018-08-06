@@ -1,0 +1,19 @@
+name: noise-ntest1
+version: '0.1'
+summary: Test nodejs snap
+description: |
+  Blah blah blah
+grade: stable
+confinement: strict
+
+apps:
+  node-service:
+    command: bin/noise-ntest1
+    daemon: simple
+    restart-condition: always
+    plugs: [network-bind]
+
+parts:
+  webserver:
+    source: .
+    plugin: nodejs
